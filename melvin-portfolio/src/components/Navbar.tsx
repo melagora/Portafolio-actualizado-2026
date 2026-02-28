@@ -21,7 +21,10 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.6 },
+      {
+        rootMargin: "-40% 0px -55% 0px",
+        threshold: 0,
+      },
     );
 
     sections.forEach((id) => {
