@@ -27,10 +27,34 @@ html {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   -webkit-scrollbar-width: none;
   scrollbar-width: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+::selection {
+  background: #171717;
+  color: white;
+}
+
+.dark ::selection {
+  background: white;
+  color: black;
 }
 
 .bg-grid-light {
