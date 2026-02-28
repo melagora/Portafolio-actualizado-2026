@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="font-semibold text-neutral-900 dark:text-white">
-            Melvin
+            Melvin González
           </div>
 
           {/* Desktop Links */}

@@ -2,28 +2,35 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Sistema de Reservaciones",
+    title: "Mejora de Carrito de Compras",
     description:
-      "Aplicación web para gestión de reservas con visualización en calendario.",
+      "Evaluar la capacidad de análisis, creatividad y desarrollo web a través de una propuesta de mejora de cierto carrito de compras.",
     problem:
-      "El cliente necesitaba centralizar reservas y visualizar disponibilidad en tiempo real.",
+      "El cliente necesitaba un rediseño de su carrito de compras para mejorar la experiencia del usuario, pero carecía de una visión clara sobre cómo estructurar la interfaz y qué tecnologías utilizar.",
     solution:
-      "Implementé una interfaz en React con integración de API REST y renderizado dinámico de eventos en calendario.",
-    stack: ["React", "TypeScript", "REST API", "React Big Calendar"],
-    demo: "#",
-    repo: "#",
+      "Se creó un diseño visual basado en las mejores prácticas de UX/UI, utilizando React y TailwindCSS para estructurar la interfaz y aplicar los estilos",
+    stack: ["React", "TypeScript", "next.js", "Figma"],
+    demo: "https://www.figma.com/design/gaU8XekbU2vQ13bUMonSsQ/Carrito-de-compras-LOLO?node-id=0-1&t=pwOgVEZjtTa8Pu2p-1",
+    repo: "https://github.com/melagora/carritodecompraslolo?tab=readme-ov-file",
   },
   {
-    title: "Carrito E-commerce",
+    title: "Single Page Application implementando API con Firebase",
     description:
-      "Rediseño completo de experiencia de carrito para plataforma digital.",
+      "Single Page Application desarrollada con React y Firebase que implementa autenticación de usuarios y gestión CRUD de productos. Solo usuarios autenticados pueden visualizar y administrar la información.",
     problem:
-      "La versión anterior tenía fricción en el proceso de compra y bajo enfoque en claridad visual.",
+      "El proyecto original era un CRUD básico sin autenticación ni control de acceso, lo que permitía modificaciones sin restricción y carecía de estructura visual profesional.",
     solution:
-      "Diseñé y desarrollé una versión moderna con mejor estructura de componentes, tipado fuerte y optimización de estado.",
-    stack: ["React", "TypeScript", "UI/UX", "Component Architecture"],
-    demo: "#",
-    repo: "#",
+      "Se integró autenticación con Firebase, protección de rutas y rediseño de interfaces con CSS puro, logrando una SPA estructurada, segura y con mejor experiencia de usuario.",
+    stack: [
+      "React",
+      "React-router",
+      "react-hook-form",
+      "Firebase",
+      "Firebase Authentication",
+      "Firebase database",
+    ],
+    demo: "https://mini-manejo-de-inventario-con-firebase-autenticacion.vercel.app/",
+    repo: "https://github.com/melagora/Mini-Manejo-de-inventario-con-firebase---autenticaci-n/tree/main",
   },
 ];
 
@@ -74,14 +81,14 @@ const Projects = () => {
               <div className="space-y-4 text-sm text-neutral-600 dark:text-neutral-400">
                 <p>
                   <span className="font-semibold text-neutral-800 dark:text-neutral-200">
-                    Problem:
+                    Problema:
                   </span>{" "}
                   {project.problem}
                 </p>
 
                 <p>
                   <span className="font-semibold text-neutral-800 dark:text-neutral-200">
-                    Solution:
+                    Solución:
                   </span>{" "}
                   {project.solution}
                 </p>
@@ -107,6 +114,8 @@ const Projects = () => {
               <div className="flex gap-4 mt-8">
                 <a
                   href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     px-4 py-2 rounded-lg
                     bg-neutral-900 text-white
@@ -120,15 +129,17 @@ const Projects = () => {
 
                 <a
                   href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
-                    px-4 py-2 rounded-lg
-                    border border-neutral-300 dark:border-neutral-700
-                    text-sm font-medium
-                    hover:bg-neutral-100 dark:hover:bg-neutral-800
-                    transition
-                  "
+    px-4 py-2 rounded-lg
+    border border-neutral-300 dark:border-neutral-700
+    text-neutral-900 dark:text-white
+    hover:bg-neutral-100 dark:hover:bg-neutral-800
+    transition
+  "
                 >
-                  View Code
+                  Revisar Código
                 </a>
               </div>
             </motion.div>
