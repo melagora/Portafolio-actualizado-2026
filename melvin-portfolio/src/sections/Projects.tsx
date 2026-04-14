@@ -32,6 +32,28 @@ const projects = [
     demo: "https://mini-manejo-de-inventario-con-firebase-autenticacion.vercel.app/",
     repo: "https://github.com/melagora/Mini-Manejo-de-inventario-con-firebase---autenticaci-n/tree/main",
   },
+  {
+    title: "Brownles Boutique - E-commerce SPA con React y Vite",
+    description:
+      "Desarrollo de una Single Page Application (SPA) para catálogo de productos en e-commerce, enfocada en rendimiento, diseño responsive y experiencia de usuario optimizada.",
+    problem:
+      "La tienda carecía de presencia digital estructurada, limitando la exposición de productos y la captación de clientes en canales online.",
+    solution:
+      "Diseñé e implementé una SPA con React y Vite, priorizando tiempos de carga rápidos y navegación fluida. Estructuré componentes reutilizables, optimicé el renderizado y desarrollé una interfaz responsive adaptada a dispositivos móviles y desktop.",
+    impact: [
+      "Mejora en la presentación visual del catálogo de productos",
+      "Experiencia de usuario más fluida mediante navegación sin recargas",
+      "Base escalable para futuras integraciones (carrito de compras, backend, autenticación)",
+    ],
+    stack: [
+      "React",
+      "Vite",
+      "JavaScript (ES6+)",
+      "CSS3 (Responsive Design, Flexbox, Grid)",
+    ],
+    demo: "https://brownles.vercel.app/",
+    repo: "https://github.com/melagora/Proyectos", // ajustar si es necesario
+  },
 ];
 
 const Projects = () => {
